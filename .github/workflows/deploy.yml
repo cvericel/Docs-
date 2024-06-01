@@ -20,12 +20,7 @@ jobs:
 
     - name: Build Retype site
       uses: retypeapp/action-build@latest
-      with:
-        license: ${{ secrets.RETYPE_LICENSE_KEY }}
 
     - name: Deploy to GitHub Pages
       uses: retypeapp/action-github-pages@latest
-      with:
-        branch: gh-pages
-        update-branch: true
         
