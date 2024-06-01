@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - retype
+      - main
 
 jobs:
   publish:
@@ -19,3 +19,6 @@ jobs:
           dotnet-version: 7.0.x
 
       - uses: retypeapp/action-build@latest
+        with:
+          branch: retype
+          update-branch: true
