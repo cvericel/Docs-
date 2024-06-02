@@ -1,5 +1,5 @@
 ---
-title: Crackmapexec
+title: CME
 tags:
   - Enumeration
   - Post-exploitation
