@@ -1,6 +1,5 @@
 ---
 title: Bloodhound
-favicon: static/favicon.jpg
 description: Tips & tricks for bloodhound
 tags:
   - Active Directory
@@ -25,28 +24,32 @@ bloodhound
 
 ## Collecting data with Sharphound
 
-Via script
++++ Script
 
-```powershell
+```powershell 
 Import-Module .\Sharphound.ps1
 Invoke-BloodHound -CollectionMethod All -OutputDirectory C:\Temp\
 ```
 
 [!file sharphound.ps1](https://raw.githubusercontent.com/BloodHoundAD/BloodHound/master/Collectors/SharpHound.ps1)
 
-Via .exe
++++ Executable
 
-```powershell
+```powershell 
 .\SharpHound.exe -c All -OutputDirectory C:\Temp\
 ```
 
 [!file sharphound.exe](https://github.com/BloodHoundAD/BloodHound/raw/master/Collectors/SharpHound.exe)
 
-Via Kali Linux (User needed)
++++ Python (User needed)
 
-```bash
+```bash From Kali Linux
 bloodhound-python -d $domain -u $user -p $password -c all -ns $ip
 ```
+
++++
+
+---
 
 ## BloodHound Tips
 
