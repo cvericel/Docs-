@@ -17,7 +17,10 @@ jobs:
       - uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 7.0.x
-          
+
+      - name: Debug - List directory contents
+        run: ls -la
+        
       - name: Run copy script
         run: ./copy_sync.sh
 
