@@ -19,8 +19,9 @@ jobs:
           dotnet-version: 7.0.x
 
       - name: Debug - List directory contents
+        run: chmod +x ./copy_sinc.sh
         run: ls -la
-        
+
       - name: Run copy script
         run: ./copy_sync.sh
 
